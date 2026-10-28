@@ -1,0 +1,13 @@
+name: security
+
+# Pilot caller for the org's reusable security workflow.
+# Secret scan runs on push (full history); dependency review runs on PRs.
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+
+jobs:
+  security:
+    uses: hidden-tokens/.github/.github/workflows/reusable-security.yml@main
