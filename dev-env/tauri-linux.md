@@ -1,4 +1,4 @@
-# Tauri prerequisites — Linux
+# Tauri prerequisites on Linux
 
 Debian/Ubuntu:
 ```sh

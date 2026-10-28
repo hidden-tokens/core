@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# hidden-tokens/core — dev-environment bootstrap.
+# hidden-tokens/core - machine setup script.
 #
 # Idempotent: fresh and already-set-up machines converge to the same state.
 # Nothing here requires root; every external install URL is printed before use.
@@ -28,11 +28,11 @@ if ! command -v bun >/dev/null; then
 fi
 say ok "bun: $(bun --version)"
 
-# --- tauri prerequisites (advice only — distro-specific, may need sudo) ------
+# --- tauri prerequisites (advice only, distro-specific, may need sudo) -------
 if [ "$os" = "Linux" ]; then
   say info "Tauri on Linux needs webkit2gtk + rsvg deps; per-distro commands live in dev-env/tauri-linux.md"
   if ! command -v apt >/dev/null && ! command -v pacman >/dev/null && ! command -v dnf >/dev/null; then
-    say warn "No apt/pacman/dnf detected — review dev-env/tauri-linux.md manually"
+    say warn "No apt/pacman/dnf detected, review dev-env/tauri-linux.md manually"
   fi
 fi
 
