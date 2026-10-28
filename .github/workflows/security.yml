@@ -10,4 +10,4 @@ on:
 
 jobs:
   security:
-    uses: hidden-tokens/.github/.github/workflows/reusable-security.yml@main
+    uses: hidden-tokens/.github/.github/workflows/reusable-security.yml@d2cd40506a88c78bda4009afa840a082b6114134
