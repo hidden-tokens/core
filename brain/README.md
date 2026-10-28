@@ -1,9 +1,9 @@
 # brain/
 
 2nd-brain setups for Hidden Tokens work: vault structures, transfer formats,
-sync conventions. The repo carries the *shape*, backups stay wherever the
+sync conventions. This repo holds the structure; backups stay wherever the
 vault of record lives.
 
-Golden rules encoded elsewhere in this repo:
-- Vault backups are git auto-commit + push (see the sync conventions file when it appears).
+Two rules the rest of the org follows:
+- Vault backups are git auto-commit and push.
 - Application data never lives inside a secrets store.

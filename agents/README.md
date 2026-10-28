@@ -1,8 +1,7 @@
 # agents/
 
-Shared agent setups for Hidden Tokens efforts: agent profiles, operational
-interfaces, orchestration notes. Convention mirrors the org standard: a profile
-lives next to an explicit operational brief (how tools are used, handoff rules,
-known quirks).
+Agent setups for Hidden Tokens work: profiles, operational interfaces,
+orchestration notes. A profile lives next to an operational brief that says
+how tools are used, how handoffs work, and what quirks to expect.
 
-Nothing here runs anywhere by itself — these are definitions, not daemons.
+Nothing here runs anywhere by itself. These are definitions, not daemons.
